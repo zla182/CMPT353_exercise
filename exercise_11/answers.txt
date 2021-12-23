@@ -1,0 +1,15 @@
+1.	
+	Line 49  comments = comments.cache()
+	If didm't use .cache()  the previously used variables have to be unnecessarily recalculated, 
+	thus increasing the total runtime of the program.
+
+2.
+	With broadcast：
+	real    1m7.705s
+	user    0m39.899s
+	sys     0m2.538s
+	Without broadcast：
+	real    1m14.454s
+	user    0m41.547s
+	sys     0m2.515s
+	so broadcast have a little improvement

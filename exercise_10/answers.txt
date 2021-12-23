@@ -1,0 +1,24 @@
+1.
+（1）time spark-submit --master=local[1] reddit_averages.py reddit-0 output
+	real    0m27.310s
+	user    0m13.400s
+	sys     0m0.938s
+（2）reddit-2 no schema, no caching
+	real    0m47.904s
+	user    0m15.651s
+	sys     0m1.114s
+（3） reddit-2 with schema, no caching
+	real    0m37.469s
+	user    0m14.155s
+	sys     0m1.003s
+（4）reddit-2 with caching and schema
+	real    0m28.943s
+	user    0m12.653s
+	sys     0m0.976s
+2.
+By examining the timing with reddit-0, it appears that it uses 0m27.310 seconds. 
+Then by comparing this to the rest of the results, we can see that most of the time is used reading the files.
+3.
+It is used in the 40th line in the wikipedia_popular.py, which between 
+the data frame after filtering later joining (cleaned_data = cleaned_data.drop('language', 'bytes', 'filename')) 
+and constructing the second data frame used for joining (groups = cleaned_data.groupBy('date')).

@@ -1,0 +1,34 @@
+1.
+The 'np.sqrt' transformation is the closest satisfying the assumptions of a T-test. 
+	exp()
+	# # Transformed data normality p-values: nan nan
+    	# # Transformed data equal-variance p-value: nan
+	the p-values are NAN so we can not use this one
+	count**2
+	# # Transformed data normality p-values: 2.78e-29 2.99e-11
+	# # Transformed data equal-variance p-value: 7.39e-08
+	the p-values of normaltest and p-value of levene are all smaller than 0.05 which means it fails the assumptions of T-test. 
+	log()
+	# # Transformed data normality p-values: 0.000402 0.315
+	# # Transformed data equal-variance p-value: 0.000419 
+	the p-value of levene of taking 'np.log' is smaller than 0.05 which means it fails the equality of variances. 
+	sqrt()
+	# Transformed data normality p-values: 0.0369 0.108
+	# Transformed data equal-variance p-value: 0.556
+	the p-value of levene is larger than 0.05, so it doesn't fail the equality of variances. 
+Thus, 'np.sqrt' is better for T-test.
+2.
+Original T-test:
+If the null hypothesis is rejected then we can conclude that the means of the number of comments on weekends and weekdays are different.
+Transformed data T-test:
+If the null hypothesis is rejected then the conlusion is that the mean of the square root of number of comments on weekends and weekdays are different.
+3.
+Central Limit Theorem does a better job of getting an answer for the original question. 
+Since after applying the Central Limit Theorem:
+Weekly data normality p-values: 0.308 0.153
+Weekly data equal-variance p-value: 0.204a
+the normal test and equality of variances test satisfy the requiements of T-test which means it can make the p-value of the result more convincing.
+4.
+The mean amount of tweets for weekdays is more than on weekends.
+So that there is more data for the weekdays. 
+With all the testing there's is no way to prove that one or the other has more comments. 

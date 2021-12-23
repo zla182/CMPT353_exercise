@@ -1,0 +1,19 @@
+1.
+Using the tests chi2 squares and mannwhite u we get o-values to be greater that 0.05，
+so we can reject the hypothesis， which means that the new interface is used more frequently. We are not p-hacking.
+2.
+So the total possible tests of choice 2 from 7 sorting implementation results is 7!/2!(7-2)! = 21,
+and the possible of making a false conclusion is (1-(1-0.05)^21) = 65.9%, 
+but we want the p-value less than 0.05/21 = 0.0024.
+3.
+The mean speed of 7 sorting implementation:
+qs1               0.010370
+partition_sort    0.010780
+qs3               0.014230
+qs2               0.014357
+qs5               0.015350
+qs4               0.016543
+merge1            0.018155
+Sorting sorting implementations by speed we can rank from fastest to slowest as qs1, partition_sort, qs2/qs3, qs5, qs4, merge1.  
+The one which is not distinguishable is q2 and q3. 
+In the graph from doing postdoc analysis there is the one with overlap.

@@ -1,0 +1,8 @@
+1.
+The regression p-value is 1.5139606492960756e-106 so that y does not linearly depend on x, and the histogram shows
+a left-skewed distribution, which should be enough to consider the OLS p-value. Then we can conclude that
+the ratings are increasing, and residuals look close enough to be normal.
+2.
+Yes, it captures more of the actual CPU temperature than the original. Extreme outliers are still ignored,
+taking into account the high short-term load on the CPU that can cause wild temperature fluctuations.
+It looks better having the prediction for the next value in the filter.

@@ -1,0 +1,5 @@
+1.  I think I get a better result by using the Kalman smoothing from the cpu.svg I found that the Kalman smoothing has kept more effective points as required.
+(1) when the temperature spikes (because of momentary CPU usage), the high-temperature values are reality and we don't want to smooth that information out of existence, but 
+(2) when the temperature is relatively flat (where the computer is not in use), the temperature is probably relatively steady, not jumping randomly between 30°C and 33°C as the data implies.
+It's more sensitive when dealing with outliers.
+2.   Speed and heading in degrees might be helpful to predict the next latitude and longitude so that we can create a more helpful transition matrix to forecast the next position.

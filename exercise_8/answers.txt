@@ -1,0 +1,11 @@
+1.
+Bayesian classifier:    0.562 0.645
+kNN classifier:         0.753 0.755
+Rand forest classifier: 0.751 0.735
+Knn model  shows highest score, and the reason is color changes not drastically.
+Knn model which takes nearest neighbours can make more reasonable prediction.
+We can specific the number of training point the model must compare making a decision. 
+2.
+Yes, the model seems to make reasonable mistakes since some cities might have similar conditions, confusing the model. 
+Adding some other data like latitude, longitude, snowy days will make the prediction more accurate.
+

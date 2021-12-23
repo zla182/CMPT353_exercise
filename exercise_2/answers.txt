@@ -1,0 +1,9 @@
+1. 
+y = kx + b, x is data['timestamp'], k is fit.slope and b is fit.intercept.
+The type of the values(y) are float numbers representing
+the potential score on each timestamp which is a prediction based on the linear regression model of data.
+2. 
+Because created_at and timestamp are different values of the same thing, the amount of the is equal. 
+The ratings (y-axis) are not changing on the graph, and only the x-axis is. 
+Therefore, when we plot the line, the x values are paired
+because there are an equal amount and the y values are properly fit for the line. 

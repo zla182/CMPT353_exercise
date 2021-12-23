@@ -1,0 +1,8 @@
+1.
+The data does not show a linear relation. 
+Therefore it is not a good way to predict population density. 
+There does not seem to be an apparent relation between temperature and population density. 
+2.
+The uncompressed file is 1.2MB while the compressed file is 255KB. 
+There is a big difference in size between compressed and uncompressed files, 
+and because Gzip can be compressed and uncompressed quickly, it is more efficient when exchanging data.

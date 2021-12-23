@@ -1,0 +1,4 @@
+1. Compared with the np_summary and pd_summary, I thought that Numpy is easier to work and the code of the Numpy is easier to read than the Pandas.
+2. %timeit pivot_months_pandas(data) runs 12.1 ms ± 225 µs per loop
+    %timeit pivot_months_loops(data) runs 185 ms ± 1.79 ms per loop
+    pivot_month_pandas(data) is much faster because we use the Pandas tools to implement this function rather than looping.
